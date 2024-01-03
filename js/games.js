@@ -21,7 +21,7 @@ function intialize(){
             let tile = document.createElement("span")
             tile.id = r.toString() + "-" + c.toString();
             tile.classList.add("tile");
-            tile.innerText = "p"
+            tile.innerText = "P";
             document.getElementById("board").appendChild(tile)
         }
     }

@@ -4,6 +4,7 @@ body {
 }
 hr {
     width:500px;
+    margin: auto;
 }
 #title {
     font-size: 36px;
