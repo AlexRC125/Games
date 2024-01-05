@@ -61,10 +61,9 @@ if (!gameOver && row == height){
 
 function update(){
     let correct = 0;
-    for (let c = 0 < width; c++) {
-        let currentTile = document.getElementById(row.toString() + "-" + col.toString()); 
-    currentTile.innerText="";
-    let letter = currentTile.innerText;
+    for (let c = 0; c < width; c++) {
+        let tile = document.getElementById(row.toString() + "-" + c);
+    let letter = tile.innerText;
 
     //Is it in the correct position?
     if (word[c] == letter){
@@ -74,6 +73,11 @@ function update(){
     else if (word.includes(letter)) {
         tile.classList.add("present");
     } // Not in the word
-    else ()
+    else {
+        tile.classList.add("absent");
+    }
+    if (correct == width) {
+      gameOver = true;  
+    }
     }
 }
